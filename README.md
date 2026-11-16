@@ -36,7 +36,11 @@ Desenvolver uma aplicação em PROLOG capaz de representar e consultar conhecime
 
 O projeto será desenvolvido por meio de uma base de fatos e um conjunto de regras lógicas, permitindo que o sistema responda a consultas e realize inferências.
 
-## 7. Integrantes
+## 7. Escopo do Projeto
+
+O sistema será desenvolvido com base no Minecraft Java Edition 26.3 (Wilderness Bound), utilizando informações sobre livros de encantamentos, equipamentos, níveis máximos e compatibilidades.
+
+## 8. Integrantes
 
 Davi Wanziler
 Lucas
