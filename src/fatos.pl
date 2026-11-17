@@ -1,4 +1,3 @@
-
 % ==========================================
 % SISTEMA INTELIGENTE DE ENCANTAMENTOS
 % MINECRAFT JAVA EDITION
@@ -30,6 +29,15 @@ encantamento(eficiencia, 5).
 encantamento(fortuna, 3).
 encantamento(toque_suave, 1).
 
+% Machado
+
+encantamento(afiacao, 5).
+encantamento(eficiencia, 5).
+encantamento(fortuna, 3).
+encantamento(julgamento, 5).
+encantamento(ruina_dos_artropodes, 5).
+encantamento(toque_suave, 1).
+
 
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
@@ -56,16 +64,36 @@ aplica_em(inquebravel, picareta).
 aplica_em(remendo, picareta).
 aplica_em(maldicao_do_desaparecimento, picareta).
 
+% Machado
+
+aplica_em(afiacao, machado).
+aplica_em(eficiencia, machado).
+aplica_em(fortuna, machado).
+aplica_em(julgamento, machado).
+aplica_em(ruina_dos_artropodes, machado).
+aplica_em(toque_suave, machado).
+aplica_em(inquebravel, machado).
+aplica_em(remendo, machado).
+aplica_em(maldicao_do_desaparecimento, machado).
+
+
 
 % 3. ENCANTAMENTOS INCOMPATIVEIS
 % ==========================================
 
-% Incompatibilidades da espada
+% Incompatibilidades da Espada
 
 incompativel(afiacao, julgamento).
 incompativel(afiacao, ruina_dos_artropodes).
 incompativel(julgamento, ruina_dos_artropodes).
 
-% Incompatibilidades da picareta
+% Incompatibilidades da Picareta
 
 incompativel(fortuna, toque_suave).
+
+% Incompatibilidades do Machado
+
+incompativel(fortuna, toque_suave).
+incompativel(afiacao, julgamento).
+incompativel(afiacao, ruina_dos_artropodes).
+incompativel(julgamento, ruina_dos_artropodes).
