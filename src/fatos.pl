@@ -45,7 +45,7 @@ encantamento(fortuna, 3).
 encantamento(toque_suave, 1).
 encantamento(inquebravel, 3).
 encantamento(remendo, 1).
-encantamento(maldicao_do_deswaparecimento, 1).
+encantamento(maldicao_do_desaparecimento, 1).
 
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
