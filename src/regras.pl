@@ -58,5 +58,25 @@ verificar_conflitos(E1, [E2 | Restantes]) :-
 % ------------------------------------------
 
 combinacao_valida(Encantamentos, Equipamento) :-
+    lista_nao_vazia(Encantamentos),
+    sem_repeticoes(Encantamentos),
     todos_podem_usar(Encantamentos, Equipamento),
     lista_sem_conflitos(Encantamentos).
+
+% 7. VALIDACAO DE LISTAS
+% ------------------------------------------
+
+lista_nao_vazia([_]).
+
+lista_nao_vazia([_ | Restantes]) :-
+    lista_nao_vazia(Restantes).
+
+
+% 8. VERIFICACAO DE ENCANTAMENTOS REPETIDOS
+% ------------------------------------------
+
+sem_repeticoes([]).
+
+sem_repeticoes([E | Restantes]) :-
+    \+ member(E, Restantes),
+    sem_repeticoes(Restantes).
