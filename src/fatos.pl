@@ -47,6 +47,15 @@ encantamento(inquebravel, 3).
 encantamento(remendo, 1).
 encantamento(maldicao_do_desaparecimento, 1).
 
+% Enxada
+
+encantamento(eficiencia, 5). 
+encantamento(fortuna, 3).
+encantamento(toque_suave, 1).
+encantamento(inquebravel, 3).
+encantamento(remendo, 1).
+encantamento(maldicao_do_desaparecimento, 1).
+
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
 
@@ -93,6 +102,16 @@ aplica_em(inquebravel, pa).
 aplica_em(remendo, pa).
 aplica_em(maldicao_do_desaparecimento, pa).
 
+% Enxada
+
+aplica_em(eficiencia, enxada).
+aplica_em(fortuna, enxada).
+aplica_em(toque_suave, enxada).
+aplica_em(inquebravel, enxada).
+aplica_em(remendo, enxada).
+aplica_em(maldicao_do_desaparecimento, enxada).
+
+
 % 3. ENCANTAMENTOS INCOMPATIVEIS
 % ==========================================
 
@@ -114,5 +133,9 @@ incompativel(afiacao, ruina_dos_artropodes).
 incompativel(julgamento, ruina_dos_artropodes).
 
 % Incompatibilidades da Pa
+
+incompativel(fortuna, toque_suave).
+
+% Imcompatibilidades da Enxada
 
 incompativel(fortuna, toque_suave).
