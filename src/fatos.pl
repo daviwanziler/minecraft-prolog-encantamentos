@@ -38,6 +38,14 @@ encantamento(julgamento, 5).
 encantamento(ruina_dos_artropodes, 5).
 encantamento(toque_suave, 1).
 
+% Pa
+
+encantamento(eficiencia, 5). 
+encantamento(fortuna, 3).
+encantamento(toque_suave, 1).
+encantamento(inquebravel, 3).
+encantamento(remendo, 1).
+encantamento(maldicao_do_deswaparecimento, 1).
 
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
@@ -76,7 +84,14 @@ aplica_em(inquebravel, machado).
 aplica_em(remendo, machado).
 aplica_em(maldicao_do_desaparecimento, machado).
 
+% Pa
 
+aplica_em(eficiencia, pa).
+aplica_em(fortuna, pa).
+aplica_em(toque_suave, pa).
+aplica_em(inquebravel, pa).
+aplica_em(remendo, pa).
+aplica_em(maldicao_do_desaparecimento, pa).
 
 % 3. ENCANTAMENTOS INCOMPATIVEIS
 % ==========================================
@@ -97,3 +112,7 @@ incompativel(fortuna, toque_suave).
 incompativel(afiacao, julgamento).
 incompativel(afiacao, ruina_dos_artropodes).
 incompativel(julgamento, ruina_dos_artropodes).
+
+% Incompatibilidades da Pa
+
+incompativel(fortuna, toque_suave).
