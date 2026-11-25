@@ -56,6 +56,10 @@ encantamento(inquebravel, 3).
 encantamento(remendo, 1).
 encantamento(maldicao_do_desaparecimento, 1).
 
+% Arco
+
+
+
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
 
@@ -111,6 +115,10 @@ aplica_em(inquebravel, enxada).
 aplica_em(remendo, enxada).
 aplica_em(maldicao_do_desaparecimento, enxada).
 
+% Arco
+
+
+
 
 % 3. ENCANTAMENTOS INCOMPATIVEIS
 % ==========================================
@@ -139,3 +147,7 @@ incompativel(fortuna, toque_suave).
 % Imcompatibilidades da Enxada
 
 incompativel(fortuna, toque_suave).
+
+% Incompatibiidades do Arco
+
+
