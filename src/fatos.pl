@@ -58,7 +58,13 @@ encantamento(maldicao_do_desaparecimento, 1).
 
 % Arco
 
-
+encantamento(forca,5).
+encantamento(impacto,2).
+encantamento(chama,1).
+encantamento(inquebravel,3).
+encantamento(infinidade,1).
+encantamento(remendo,1).
+encantamento(maldicao_do_desaparecimento).
 
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
@@ -117,8 +123,13 @@ aplica_em(maldicao_do_desaparecimento, enxada).
 
 % Arco
 
-
-
+aplica_em(forca, arco).
+aplica_em(impacto,arco).
+aplica_em(chama,arco).
+apica_em(inquebravel,arco).
+aplica_em(infinidade,arco).
+aplica_em(remendo,arco).
+aplica_em(maldicao_do_desaparecimento,arco)
 
 % 3. ENCANTAMENTOS INCOMPATIVEIS
 % ==========================================
@@ -150,4 +161,4 @@ incompativel(fortuna, toque_suave).
 
 % Incompatibiidades do Arco
 
-
+incompativel(infinidade,remendo).
