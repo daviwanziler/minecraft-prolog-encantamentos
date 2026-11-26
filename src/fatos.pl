@@ -64,7 +64,7 @@ encantamento(chama,1).
 encantamento(inquebravel,3).
 encantamento(infinidade,1).
 encantamento(remendo,1).
-encantamento(maldicao_do_desaparecimento).
+encantamento(maldicao_do_desaparecimento,1).
 
 % 2. COMPATIBILIDADE COM EQUIPAMENTOS
 % ==========================================
